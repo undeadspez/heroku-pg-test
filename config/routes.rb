@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root 'animals#index'
+  get '/index', to: 'animals#index'
+
+  resource :animals
+
+  get  '/new',    to: 'animals#new'
+  post '/add',    to: 'animals#create'
+  get  '/delete', to: 'animals#delete' 
+
 end

@@ -1,0 +1,10 @@
+%nav.navbar.navbar-expand-md.bg-dark.navbar-dark.mb-4
+    .container
+        %button.navbar-toggler{ data: { toggle: "collapse", target: '#navbar' }}
+            %span.navbar-toggler-icon
+        #navbar.collapse.navbar-collapse
+            %ul.navbar-nav
+                %li.nav-item
+                    = link_to "Index", root_path, class: "nav-link"
+                %li.nav-item
+                    = link_to "New",   new_path, class: "nav-link"

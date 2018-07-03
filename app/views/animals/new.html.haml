@@ -1,0 +1,15 @@
+.row
+    .col-md-6.offset-md-3
+        %h1.mb-4.text-center Add animal to the index
+        = form_for @animal, ulr: add_path do |f|
+            = render 'shared/error_messages'
+
+            .form-group
+                = f.label :name
+                = f.text_field :name, class: "form-control", autocomplete: "off"
+
+            .form-group
+                = f.label :species
+                = f.text_field :species, class: "form-control", autocomplete: "off"
+
+            = f.submit "Add animal", class: "w-100 btn btn-primary"
