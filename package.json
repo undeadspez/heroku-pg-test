@@ -1,0 +1,5 @@
+{
+  "name": "heroku-pg-test",
+  "private": true,
+  "dependencies": {}
+}
