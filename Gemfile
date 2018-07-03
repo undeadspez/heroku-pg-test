@@ -15,7 +15,7 @@ gem 'haml'
 
 gem 'rails', '~> 5.1.6'
 
-gem 'puma' # '~> 3.7'
+gem 'puma', '~> 3.7'
 
 gem 'pg'
 # Use SCSS for stylesheets
